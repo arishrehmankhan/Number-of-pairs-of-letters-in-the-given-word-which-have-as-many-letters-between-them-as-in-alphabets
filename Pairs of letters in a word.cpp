@@ -16,19 +16,14 @@ int main(){
 	for(int i=0;i<word.length();i++){
 		for(int j=0;j<word.length();j++){
 			if(i!=j){
-				if(word[i]!=word[j]){
-				
 				wordDiff = abs(i-j);
 				alphabetDiff = abs(returnWeight(word[i]) - returnWeight(word[j]));
 				if(wordDiff==alphabetDiff){
-					cout<<word[i]<<" "<<word[j]<<endl;
-					cout<<wordDiff<<" "<<alphabetDiff<<endl;
-					count++;
+				count++;
+				}
 			}
 		}
-		}
 	}
-}
 	cout<<count/2;
 	return 0;
 }
